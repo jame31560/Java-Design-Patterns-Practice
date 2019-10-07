@@ -13,6 +13,5 @@ public class App {
         singleton = Singleton.getInstance();
         System.out.println("Instance's Name: " + singleton.getName());
         System.out.println("=======Singleton Test End=====");
-
     }
 }
