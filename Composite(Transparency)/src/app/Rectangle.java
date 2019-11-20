@@ -3,10 +3,10 @@ package app;
 /**
  * Rectangle
  */
-public class Rectangle implements Graphic {
+public class Rectangle extends Graphic {
 
     @Override
-    public void draw() {
+    void draw() {
         System.out.println("------Rectangle");
     }
 }

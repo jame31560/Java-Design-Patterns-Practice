@@ -1,9 +1,9 @@
 package app;
 
 /**
- * Picture
+ * Graphic
  */
-public abstract class Graphic {
+public interface Graphic {
 
-    abstract void draw();
+    public void draw();
 }

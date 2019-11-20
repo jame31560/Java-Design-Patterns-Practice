@@ -3,10 +3,10 @@ package app;
 /**
  * Text
  */
-public class Text implements Graphic {
+public class Text extends Graphic {
 
     @Override
-    public void draw() {
+    void draw() {
         System.out.println("------Text");
     }
 }

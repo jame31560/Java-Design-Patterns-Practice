@@ -5,12 +5,12 @@ import java.util.ArrayList;
 /**
  * Picture
  */
-public class Picture implements Graphic {
+public class Picture extends Graphic {
 
     private ArrayList<Graphic> graphicList = new ArrayList<>();
 
     @Override
-    public void draw() {
+    void draw() {
         System.out.println("========");
         System.out.println("---Picture");
         System.out.println("========");
@@ -20,10 +20,12 @@ public class Picture implements Graphic {
         }
     }
 
+    @Override
     public void addGraphic(Graphic graphic) {
         graphicList.add(graphic);
     }
 
+    @Override
     public void deleteGraphic(int index) {
         graphicList.remove(index);
     }

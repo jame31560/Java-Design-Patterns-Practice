@@ -3,7 +3,7 @@ package app;
 /**
  * Line
  */
-public class Line implements Graphic {
+public class Line extends Graphic {
 
     @Override
     public void draw() {
