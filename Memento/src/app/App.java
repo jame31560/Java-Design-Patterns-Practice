@@ -2,6 +2,8 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("======Memento Test Start======");
+
         Originator originator = new Originator(0);
         Caretaker caretaker = new Caretaker();
         caretaker.setMemento(originator.creatMemento());
@@ -13,6 +15,7 @@ public class App {
         originator.nextState();
         originator.restoreMemento(caretaker.getMemento());
         originator.printState();
+        System.out.println("=======Memento Test End=======");
 
     }
 }
